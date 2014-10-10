@@ -12,6 +12,7 @@ REQUIRED: User sesssion is managed<br>
 REQUIRED: User can logout <br>
 REQUIRED: USer can see the profile page <br>
 REQUIRED: User can view the home timeline <br>
+REQUIRED: User can scroll through his tweets <br>
 <br>
 
 ![ScreenShot](https://raw.github.com/priyankaavj/TwitterClient/master/twitter.gif)

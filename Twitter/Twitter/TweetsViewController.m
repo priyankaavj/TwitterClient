@@ -17,6 +17,10 @@
 @interface TweetsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *tweets;
+@property (weak, nonatomic) IBOutlet UIView *menuView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *menuConstraint;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePic;
+@property (weak, nonatomic) IBOutlet UILabel *screenName;
 
 @end
 
@@ -27,11 +31,29 @@
     if (self) {
         // Custom initialization
 
-        [[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:22 green:166 blue:230 alpha:0.9]];
         
     }
     return self;
 }
+
+- (IBAction)didSwipeRight:(id)sender {
+    NSLog(@"did swipe right");
+    User *user = [User currentUser];
+    
+    NSString *posterUrl = [user valueForKeyPath:@"profileImageUrl"];
+    [self.profilePic setImageWithURL:[NSURL URLWithString:posterUrl]];
+    self.screenName.text = user.name;
+    [UIView animateWithDuration:.50 animations:^{
+        self.menuConstraint.constant = 160;
+        
+    }];
+}
+- (IBAction)menuProfile:(id)sender {
+    [self profileSelect];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.delegate = self;

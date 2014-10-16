@@ -4,7 +4,7 @@ TwitterClient
 iOS client for Twitter
 
 <b>TIME SPENT</b><br> 
-12 hours in total<br>
+15 hours in total<br>
 
 <b>COMPLETED USER STORIES</b><br>
 REQUIRED: User can login and authenticate via oAuth <br>

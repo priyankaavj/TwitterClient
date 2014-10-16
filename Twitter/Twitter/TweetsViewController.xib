@@ -104,7 +104,7 @@
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="qvK-l2-lPv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dgh-NV-eMU"/>
-                <constraint firstAttribute="trailing" secondItem="qvK-l2-lPv" secondAttribute="trailing" constant="360" id="LOb-P4-dxf"/>
+                <constraint firstAttribute="trailing" secondItem="qvK-l2-lPv" secondAttribute="trailing" constant="380" id="LOb-P4-dxf"/>
                 <constraint firstAttribute="bottom" secondItem="qvK-l2-lPv" secondAttribute="bottom" id="k7P-5c-Tby"/>
             </constraints>
             <connections>

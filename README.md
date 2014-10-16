@@ -16,3 +16,4 @@ REQUIRED: User can scroll through his tweets <br>
 <br>
 
 ![ScreenShot](https://raw.github.com/priyankaavj/TwitterClient/master/twitter.gif)
+![ScreenShot](https://raw.github.com/priyankaavj/TwitterClient/master/twitterMenu.gif)
